@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+.main{
+    color: black;
+}
+nav{
+    background:rgb(51, 51, 94) ;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    list-style: none;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition:.5s
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.div{
+    position: relative;
+}
+.imgcs{
+    display: inline-block;
+    position:absolute;
+}
+#check{
+    display: none;
+}
+.child-1{
+    position: absolute;
+    font-size: 25px;
+    margin-top: 200px;
+    margin-left: 800px;
+}
+.spl{
+    font-size: 20px;
+}
+.prdtimg{
+    position: relative;
+}
+.copy{
+    display: none;
+}
+.rh1{
+    display: none;
+}
+.container{
+    display: flex;
+    margin-top: -105px;
+}
+.box1 , .box2 ,.box3{
+    padding: 20px;
+}
+.box1{
+   flex: 1;
+   color: white;
+   background-color: rgb(52, 110, 165);
+   z-index: 3;
+   line-height: 30px;
+}
+.box2{
+ flex: 1;
+ color: white;
+ background-color: rgb(20, 64, 105);
+ z-index: 2;
+ text-align: justify;
+ line-height: 20px;
+}
+.box3{
+    flex: 1;
+    color: white;
+    background-color: rgb(13, 42, 70);
+    z-index: 1;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 20px;
+}
+.same{
+    display: inline-block;
+}
+.cont .fas,.fab{
+    font-size: 25px;
+    color:rgb(26, 75, 104);
+    padding: 20px 25px;
+}
+h4{
+    padding: 10px;
+    text-align: center;
+}
+add{
+    font-size: 10px;
+}
+    @media (max-width:952px) {
+        label.logo{
+            font-size: 20px;
+            padding:50px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+    body{
+        background: url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id949812160?k=20&m=949812160&s=170667a&w=0&h=d37eip7n1YrRu2wZxkKndJb_IR6DevLpXbAWBzzWVD8=);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imgcs{
+        display: none;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#2c3e50;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        line-height: 20px;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        text-align: right;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .prdtimg{
+        display: none;
+    }
+    .copy{
+        display: inline-block;
+        width: 450px;
+        height: 500px;
+        margin-top: -30px;
+    }
+    .rh1{
+        margin-top: 50px;
+        margin-left:30px ;
+        color: rgb(26, 37, 97);
+        text-decoration: underline;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+    }
+    .container{
+        display:block;
+    }
+}
